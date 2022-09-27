@@ -36,6 +36,7 @@
                                                     data-toggle="dropdown">
                                                     <i data-feather="more-vertical"></i>
                                                 </button>
+                                                @if(Auth::user()->name != $user->name)
                                                 <div class="dropdown-menu">
                                                     <a href="javascript:void('delete')" class="dropdown-item text-danger" 
                                                         onclick="deleteConfirm('form-delete', '{{ $user->id }}')">
@@ -47,6 +48,7 @@
                                                         @method('delete')
                                                     </form>
                                                 </div>
+                                                @endif
                                             </div>
                                         </td>
                                     </tr>

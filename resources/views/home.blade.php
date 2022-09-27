@@ -27,7 +27,7 @@
                 </p>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 d-none d-lg-block">
                     <div class="panel-body">
                         <canvas id="canvas" height="250" width="600"></canvas>
                     </div>
@@ -69,7 +69,7 @@
                         <span class=" btn btn-outline-primary">@lang('Invoice Purchase'): {{ number_format($invoiceBuyBalance, 0, ',', '.') }}</span>
                     </p>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 d-none d-lg-block">
                     <div class="panel-body">
                         <canvas id="canvas2" height="250" width="600"></canvas>
                     </div>
